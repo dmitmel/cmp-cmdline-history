@@ -19,7 +19,7 @@ cmp.setup.cmdline(':', {
 A more advanced example: this will also setup the history completion for all other command-line modes.
 
 ```lua
-for _, cmd_type in ipairs({':', '/', '?', '@', '='}) do
+for _, cmd_type in ipairs({':', '/', '?', '@'}) do
   cmp.setup.cmdline(cmd_type, {
     sources = {
       { name = 'cmdline_history' },
