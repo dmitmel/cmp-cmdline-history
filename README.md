@@ -28,7 +28,7 @@ for _, cmd_type in ipairs({':', '/', '?', '@'}) do
 end
 ```
 
-By default this source will read the history for the current mode, but you can also force it to use some other mode with the `history_type` option. The possible values for it can be found in [`:help hist-names`](https://neovim.io/doc/user/eval.html#hist-names) and [`:help getcmdtype()`](<https://neovim.io/doc/user/eval.html#getcmdtype()>). Not sure how this can be useful, but I guess you could use it to autocomplete Ex commands in a Vimscript file:
+By default this source will read the history for the current mode, but you can also force it to use some other mode with the `history_type` option. The possible values for it can be found in [`:help hist-names`](https://neovim.io/doc/user/builtin.html#hist-names) and [`:help getcmdtype()`](<https://neovim.io/doc/user/builtin.html#getcmdtype()>). Not sure how this can be useful, but I guess you could use it to autocomplete Ex commands in a Vimscript file:
 
 ```vim
 autocmd FileType vim lua require('cmp').setup.buffer({
